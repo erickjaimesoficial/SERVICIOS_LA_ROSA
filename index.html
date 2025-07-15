@@ -1,285 +1,317 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Servicios La Rosa - Inicio</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Servicios La Rosa - Inicio</title>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet" />
-  <link href="css/bootstrap.min.css" rel="stylesheet" />
-  <link href="css/bootstrap-icons.css" rel="stylesheet" />
-  <link href="css/tooplate-crispy-kitchen.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap"
+        rel="stylesheet" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/bootstrap-icons.css" rel="stylesheet" />
+    <link href="css/tooplate-crispy-kitchen.css" rel="stylesheet" />
 
-  <style>
-    .tooltip-container {
-      position: relative;
-    }
+    <style>
+        .tooltip-container {
+            position: relative;
+        }
 
-    .tooltip-text {
-      visibility: hidden;
-      opacity: 0;
-      width: 240px;
-      background-color: rgba(0, 0, 0, 0.85);
-      color: #fff;
-      text-align: center;
-      padding: 10px;
-      border-radius: 6px;
-      position: absolute;
-      bottom: 110%;
-      left: 50%;
-      transform: translateX(-50%);
-      transition: opacity 0.3s ease-in-out;
-      z-index: 10;
-      font-size: 14px;
-    }
+        .tooltip-text {
+            visibility: hidden;
+            opacity: 0;
+            width: 240px;
+            background-color: rgba(0, 0, 0, 0.85);
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            border-radius: 6px;
+            position: absolute;
+            bottom: 110%;
+            left: 50%;
+            transform: translateX(-50%);
+            transition: opacity 0.3s ease-in-out;
+            z-index: 10;
+            font-size: 14px;
+        }
 
-    .tooltip-container:hover .tooltip-text {
-      visibility: visible;
-      opacity: 1;
-    }
-  </style>
+        .tooltip-container:hover .tooltip-text {
+            visibility: visible;
+            opacity: 1;
+        }
+    </style>
 </head>
-    
-    <body>
-        
-        <nav class="navbar navbar-expand-lg bg-white shadow-lg">
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-white shadow-lg">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                Servicios La Rosa
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <!-- ms-auto para alinear a la derecha -->
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="menu.html">Menu</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+
+        <section class="hero">
             <div class="container">
-                <a class="navbar-brand" href="index.html">
-                    Servicios La Rosa
-                </a>
-        
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <!-- ms-auto para alinear a la derecha -->
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">Inicio</a>
-                        </li>
-        
-                        <li class="nav-item">
-                            <a class="nav-link" href="menu.html">Menu</a>
-                        </li>
-        
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contacto</a>
-                        </li>
-                    </ul>
+                <div class="row">
+
+                    <div class="col-lg-5 col-12 m-auto">
+                        <div class="heroText text-center">
+                            <h1 class="text-white mb-0"> <!-- mb-0 para eliminar margen inferior -->
+                                <div>SERVICIOS</div> <!-- Línea superior -->
+                                <div>LA ROSA</div> <!-- Línea inferior -->
+                            </h1>
+
+                        </div>
+                    </div>
+
                 </div>
             </div>
-        </nav>
+            <div class="video-wrap">
+                <video autoplay="" loop="" muted="" class="custom-video" poster="">
+                    <source src="video/abcde.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
 
-        <main>
+            <div class="overlay"></div>
+        </section>
 
-            <section class="hero">
-                <div class="container">
-                    <div class="row">
-
-                        <div class="col-lg-5 col-12 m-auto">
-                            <div class="heroText text-center">
-                              <h1 class="text-white mb-0"> <!-- mb-0 para eliminar margen inferior -->
-                                <div>SERVICIOS</div> <!-- Línea superior -->
-                                <div>LA ROSA</div>   <!-- Línea inferior -->
-                              </h1>
-                              
-                            </div>
-                          </div>
-
-                    </div>
-                </div>
-                <div class="video-wrap">
-                    <video autoplay="" loop="" muted="" class="custom-video" poster="">
-                        <source src="video/abcde.mp4" type="video/mp4">
-                        	Your browser does not support the video tag.
-                    	</video>
-                </div>
-
-                <div class="overlay"></div>
-            </section>
-
-            <section class="menu section-padding">
-                <div class="container">
-                    <div class="row">
-
-                        <div class="col-12">
-                            <h2 class="text-center mb-lg-5 mb-4">Nuestros Servicios</h2>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6 col-12">
-                            
-                            <div class="menu-thumb tooltip-container">
-                        <div class="menu-image-wrap">
-                          <img src="images/nuestros_servicios/Asesoría_Personalizada.png" class="img-fluid menu-image" alt="">
-                         </div>
-                        <div class="menu-info d-flex justify-content-center align-items-center text-center">
-                          <h4 class="mb-0">Asesoría Personalizada</h4>
-                         </div>
-                                <div class="tooltip-text">
-                                 Te orientamos legalmente en la compra, venta o alquiler de propiedades. Atención personalizada.
-                         </div>
-                    </div>
-                </div>
-
-                        <div class="col-lg-4 col-md-6 col-12">
-                            <div class="menu-thumb">
-                                <div class="menu-image-wrap">
-                                    <img src="images/nuestros_servicios/Trámites_y_Documentación.png" class="img-fluid menu-image" alt="">
-                                </div>
-                                <div class="menu-info d-flex justify-content-center align-items-center text-center"> 
-                                    <h4 class="mb-0">Trámites y documentación</h4>                                   
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6 col-12">
-                            <div class="menu-thumb">
-                                <div class="menu-image-wrap">
-                                    <img src="images/nuestros_servicios/Negociación.png" class="img-fluid menu-image" alt="">
-                                </div>
-                                <div class="menu-info d-flex justify-content-center align-items-center text-center"> 
-                                    <h4 class="mb-0">Trámites registrales</h4>                                  
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6 col-12">
-                            <div class="menu-thumb">
-                                <div class="menu-image-wrap">
-                                    <img src="images/nuestros_servicios/Promoción_de_Propiedades .png" class="img-fluid menu-image" alt="">
-                                </div>
-                                <div class="menu-info d-flex justify-content-center align-items-center text-center"> 
-                                    <h4 class="mb-0">Vehículos</h4>                                                                   
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6 col-12">
-                            <div class="menu-thumb">
-                                <div class="menu-image-wrap">
-                                    <img src="images/nuestros_servicios/Tasaciones_y_Valuaciones.png" class="img-fluid menu-image" alt="">
-                                </div>
-                                <div class="menu-info d-flex justify-content-center align-items-center text-center"> 
-                                    <h4 class="mb-0">Judiciales</h4>                                 
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6 col-12">
-                            <div class="menu-thumb">
-                                <div class="menu-image-wrap">
-                                    <img src="images/nuestros_servicios/Asesoría_Legal_Inmobiliaria.png" class="img-fluid menu-image" alt="">                                   
-                                </div>
-                                <div class="menu-info d-flex justify-content-center align-items-center text-center"> 
-                                    <h4 class="mb-0">Otros</h4>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </main>
-
-        <footer class="site-footer section-padding">
-            
+        <section class="menu section-padding">
             <div class="container">
-                
                 <div class="row">
 
                     <div class="col-12">
-                        <h4 class="text-white mb-4 me-5">Información</h4>
+                        <h2 class="text-center mb-lg-5 mb-4">Nuestros Servicios</h2>
                     </div>
 
-                    <div class="col-lg-4 col-md-7 col-xs-12 tooplate-mt30">
-                        <h6 class="text-white mb-lg-4 mb-3">Locación</h6>
+                    <div class="col-lg-4 col-md-6 col-12">
 
-                        <p>ABCD, EFGH, IJ 1234, Perú</p>
-
-                        <a href="https://goo.gl/maps/wZVGLA7q64uC1s886" class="custom-btn btn btn-dark mt-2">Dirección</a>
+                        <div class="menu-thumb tooltip-container">
+                            <div class="menu-image-wrap">
+                                <img src="images/nuestros_servicios/Asesoría_Personalizada.png"
+                                    class="img-fluid menu-image" alt="">
+                            </div>
+                            <div class="menu-info d-flex justify-content-center align-items-center text-center">
+                                <h4 class="mb-0">Asesoría Personalizada</h4>
+                            </div>
+                            <div class="tooltip-text">
+                                Te orientamos legalmente en la compra, venta o alquiler de propiedades. Atención
+                                personalizada.
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-5 col-xs-12 tooplate-mt30">
-                        <h6 class="text-white mb-lg-4 mb-3">Horario</h6>
+                    <div class="col-lg-4 col-md-6 col-12">
 
-                        <p class="mb-2">Lunes - Viernes</p>
-
-                        <p>10:00 AM - 08:00 PM</p>
-
-                        <p>Tel: <a href="tel: 010-02-0340" class="tel-link">+51 983 881 481</a></p>
+                        <div class="menu-thumb tooltip-container">
+                            <div class="menu-image-wrap">
+                                <img src="images/nuestros_servicios/Trámites_y_Documentación.png"
+                                    class="img-fluid menu-image" alt="">
+                            </div>
+                            <div class="menu-info d-flex justify-content-center align-items-center text-center">
+                                <h4 class="mb-0">Trámites y documentación</h4>
+                            </div>
+                            <div class="tooltip-text">
+                                Te orientamos legalmente en la compra, venta o alquiler de propiedades. Atención
+                                personalizada.
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-6 col-xs-12 tooplate-mt30">
-                        <h6 class="text-white mb-lg-4 mb-3">Redes Sociales</h6>
+                    <div class="col-lg-4 col-md-6 col-12">
 
-                        <ul class="social-icon">
-                            <li>
-                                <a href="#" class="social-icon-link" aria-label="Facebook">
-                                  <i class="bi bi-facebook"></i>
-                                  <span class="visually-hidden">Facebook</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="social-icon-link" aria-label="Instagram">
-                                    <i class="bi bi-instagram"></i>
-                                    <span class="visually-hidden">instagram</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="social-icon-link" aria-label="Youtube">
-                                    <i class="bi bi-youtube"></i>
-                                    <span class="visually-hidden">Youtube</span>
-                                </a>
-                            </li>
-                        </ul>
-                          
-                        <p class="copyright-text tooplate-mt60">
-                            Copyright © 2025 JE Co., Ltd.<br>
-                            Diseño: 
-                            <a rel="noopener noreferrer nofollow" href="https://www.google.com.pe/" target="_blank">JE Corp</a></p>
-                        
+                        <div class="menu-thumb tooltip-container">
+                            <div class="menu-image-wrap">
+                                <img src="images/nuestros_servicios/Negociación.png" class="img-fluid menu-image"
+                                    alt="">
+                            </div>
+                            <div class="menu-info d-flex justify-content-center align-items-center text-center">
+                                <h4 class="mb-0">Trámites registrales</h4>
+                            </div>
+                            <div class="tooltip-text">
+                                Te orientamos legalmente en la compra, venta o alquiler de propiedades. Atención
+                                personalizada.
+                            </div>
+                        </div>
                     </div>
 
-                </div><!-- row ending -->
-                
-             </div><!-- container ending -->
-             
-        </footer>
+                    <div class="col-lg-4 col-md-6 col-12">
 
-        <!-- JAVASCRIPT FILES -->
-        <script src="js/jquery.min.js"></script>
-        <script src="js/bootstrap.bundle.min.js"></script>
-        <script src="js/custom.js"></script>
+                        <div class="menu-thumb tooltip-container">
+                            <div class="menu-image-wrap">
+                                <img src="images/nuestros_servicios/Promoción_de_Propiedades .png"
+                                    class="img-fluid menu-image" alt="">
+                            </div>
+                            <div class="menu-info d-flex justify-content-center align-items-center text-center">
+                                <h4 class="mb-0">Vehículos</h4>
+                            </div>
+                            <div class="tooltip-text">
+                                Te orientamos legalmente en la compra, venta o alquiler de propiedades. Atención
+                                personalizada.
+                            </div>
+                        </div>
+                    </div>
 
-        <script>
-            // Obtener la ruta actual (ej: "index.html")
-            const currentPage = window.location.pathname.split('/').pop();
-            
-            // Seleccionar todos los enlaces del menú
-            const navLinks = document.querySelectorAll('.nav-link');
-            
-            // Recorrer cada enlace y comparar con la página actual
-            navLinks.forEach(link => {
-                const linkPage = link.getAttribute('href').split('/').pop();
-                
-                // Remover 'active' de todos los enlaces primero
-                link.classList.remove('active');
-                
-                // Agregar 'active' solo al enlace que coincide con la página actual
-                if (linkPage === currentPage) {
-                    link.classList.add('active');
-                }
-            });
-        </script>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="menu-thumb tooltip-container">
+                            <div class="menu-image-wrap">
+                                <img src="images/nuestros_servicios/Tasaciones_y_Valuaciones.png"
+                                    class="img-fluid menu-image" alt="">
+                            </div>
+                            <div class="menu-info d-flex justify-content-center align-items-center text-center">
+                                <h4 class="mb-0">Judiciales</h4>
+                            </div>
+                            <div class="tooltip-text">
+                                Te orientamos legalmente en la compra, venta o alquiler de propiedades. Atención
+                                personalizada.
+                            </div>
+                        </div>
+                    </div>
 
-        <a href="https://wa.me/51983881481?text=Hola,%20estoy%20interesado%20en%20sus%20servicios" 
-   class="whatsapp-float" 
-   target="_blank" 
-   rel="noopener noreferrer"
-   aria-label="Contactar por WhatsApp">
-   <i class="bi bi-whatsapp"></i> <!-- Icono de Bootstrap Icons -->
-</a>
-    </body>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="menu-thumb tooltip-container">
+                            <div class="menu-image-wrap">
+                                <img src="images/nuestros_servicios/Asesoría_Legal_Inmobiliaria.png"
+                                    class="img-fluid menu-image" alt="">
+                            </div>
+                            <div class="menu-info d-flex justify-content-center align-items-center text-center">
+                                <h4 class="mb-0">Otros</h4>
+                            </div>
+                            <div class="tooltip-text">
+                                Te orientamos legalmente en la compra, venta o alquiler de propiedades. Atención
+                                personalizada.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer section-padding">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-12">
+                    <h4 class="text-white mb-4 me-5">Información</h4>
+                </div>
+
+                <div class="col-lg-4 col-md-7 col-xs-12 tooplate-mt30">
+                    <h6 class="text-white mb-lg-4 mb-3">Locación</h6>
+
+                    <p>ABCD, EFGH, IJ 1234, Perú</p>
+
+                    <a href="https://goo.gl/maps/wZVGLA7q64uC1s886" class="custom-btn btn btn-dark mt-2">Dirección</a>
+                </div>
+
+                <div class="col-lg-4 col-md-5 col-xs-12 tooplate-mt30">
+                    <h6 class="text-white mb-lg-4 mb-3">Horario</h6>
+
+                    <p class="mb-2">Lunes - Viernes</p>
+
+                    <p>10:00 AM - 08:00 PM</p>
+
+                    <p>Tel: <a href="tel: 010-02-0340" class="tel-link">+51 983 881 481</a></p>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-xs-12 tooplate-mt30">
+                    <h6 class="text-white mb-lg-4 mb-3">Redes Sociales</h6>
+
+                    <ul class="social-icon">
+                        <li>
+                            <a href="#" class="social-icon-link" aria-label="Facebook">
+                                <i class="bi bi-facebook"></i>
+                                <span class="visually-hidden">Facebook</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="social-icon-link" aria-label="Instagram">
+                                <i class="bi bi-instagram"></i>
+                                <span class="visually-hidden">instagram</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="social-icon-link" aria-label="Youtube">
+                                <i class="bi bi-youtube"></i>
+                                <span class="visually-hidden">Youtube</span>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <p class="copyright-text tooplate-mt60">
+                        Copyright © 2025 JE Co., Ltd.<br>
+                        Diseño:
+                        <a rel="noopener noreferrer nofollow" href="https://www.google.com.pe/" target="_blank">JE
+                            Corp</a>
+                    </p>
+
+                </div>
+
+            </div><!-- row ending -->
+
+        </div><!-- container ending -->
+
+    </footer>
+
+    <!-- JAVASCRIPT FILES -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/custom.js"></script>
+
+    <script>
+        // Obtener la ruta actual (ej: "index.html")
+        const currentPage = window.location.pathname.split('/').pop();
+
+        // Seleccionar todos los enlaces del menú
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        // Recorrer cada enlace y comparar con la página actual
+        navLinks.forEach(link => {
+            const linkPage = link.getAttribute('href').split('/').pop();
+
+            // Remover 'active' de todos los enlaces primero
+            link.classList.remove('active');
+
+            // Agregar 'active' solo al enlace que coincide con la página actual
+            if (linkPage === currentPage) {
+                link.classList.add('active');
+            }
+        });
+    </script>
+
+    <a href="https://wa.me/51983881481?text=Hola,%20estoy%20interesado%20en%20sus%20servicios" class="whatsapp-float"
+        target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">
+        <i class="bi bi-whatsapp"></i> <!-- Icono de Bootstrap Icons -->
+    </a>
+</body>
 </html>
