@@ -96,7 +96,7 @@
                                 
                                 <input type="hidden" name="_subject" value="Nuevo mensaje de contacto - Servicios La Rosa">
                                 <input type="hidden" name="_language" value="es">
-                                <input type="text" name="_honeypot" style="display:none"> <!-- Campo anti-spam -->
+                                <input type="text" name="_honeypot" class="hidden-input" aria-hidden="true" tabindex="-1">
                             
                                 <div class="col-lg-5 col-12 ms-auto">
                                     <button type="submit" class="form-control">Enviar</button>
@@ -119,11 +119,17 @@
                         </div>
 
                         <div class="col-12">
-                            <h4 class="mt-5 mb-4">ABCD, EFGH, IJ 1234, Perú</h4>
-                            <div class="google-map pt-3">
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15609.838389627332!2d-77.06941420121623!3d-12.011848061553815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105cee31ed53f5b%3A0x9b233fc0b1c13e2c!2sCentro%20Comercial%20Fiori!5e0!3m2!1ses-419!2spe!4v1743539859854!5m2!1ses-419!2spe" width="1300" height="700" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                            </div>
-                        </div>
+              <h4 class="mt-5 mb-4">ABCD, EFGH, IJ 1234, Perú</h4>
+              <div class="google-map pt-3">
+                 <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15609.838389627332!2d-77.06941420121623!3d-12.011848061553815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105cee31ed53f5b%3A0x9b233fc0b1c13e2c!2sCentro%20Comercial%20Fiori!5e0!3m2!1ses-419!2spe!4v1743539859854!5m2!1ses-419!2spe"
+                  class="mapa-iframe"
+                  loading="lazy"
+                  allow="fullscreen"
+                  title="Mapa de ubicación del Centro Comercial Fiori en Lima, Perú">
+                 </iframe>
+              </div>
+              </div>
                     </div>
                 </div>
             </section>
@@ -149,12 +155,29 @@
                     <div class="col-lg-4 col-md-6 col-xs-12 tooplate-mt30">
                         <h6 class="text-white mb-lg-4 mb-3">Redes Sociales</h6>
                         <ul class="social-icon">
-                            <li><a href="#" class="social-icon-link bi-facebook"></a></li>
-                            <li><a href="#" class="social-icon-link bi-instagram"></a></li>
-                            <li><a href="#" class="social-icon-link bi-youtube"></a></li>
+                            <li>
+                                <a href="#" class="social-icon-link" aria-label="Facebook">
+                                  <i class="bi bi-facebook"></i>
+                                  <span class="visually-hidden">Facebook</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="social-icon-link" aria-label="Instagram">
+                                    <i class="bi bi-instagram"></i>
+                                    <span class="visually-hidden">instagram</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="social-icon-link" aria-label="Youtube">
+                                    <i class="bi bi-youtube"></i>
+                                    <span class="visually-hidden">Youtube</span>
+                                </a>
+                            </li>
                         </ul>
-                        <p class="copyright-text tooplate-mt60">Copyright © 2025 JE Co., Ltd.
-                        <br>Design: <a rel="nofollow" href="https://www.google.com.pe/" target="_blank">JE Corp</a></p>
+                        <p class="copyright-text tooplate-mt60">
+                            Copyright © 2025 JE Co., Ltd.<br>
+                            Diseño: 
+                            <a rel="noopener noreferrer nofollow" href="https://www.google.com.pe/" target="_blank">JE Corp</a></p>
                     </div>
                 </div>
              </div>
@@ -180,9 +203,11 @@
         </script>
         
         <a href="https://wa.me/51983881481?text=Hola,%20estoy%20interesado%20en%20sus%20servicios" 
-           class="whatsapp-float" 
-           target="_blank">
-           <i class="bi bi-whatsapp"></i>
-        </a>
+   class="whatsapp-float" 
+   target="_blank" 
+   rel="noopener noreferrer"
+   aria-label="Contactar por WhatsApp">
+   <i class="bi bi-whatsapp"></i> <!-- Icono de Bootstrap Icons -->
+</a>
     </body>
 </html>
