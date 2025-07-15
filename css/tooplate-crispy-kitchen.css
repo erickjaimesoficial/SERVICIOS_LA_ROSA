@@ -977,7 +977,7 @@ strong {
   z-index: 10;
 
   /* ESTILO DEL TEXTO */
-  font-size: 20px;     /* ← PARA AGRANDAR LETRAS DE LA BURBUJA */
+  font-size: 25px;     /* ← PARA AGRANDAR LETRAS DE LA BURBUJA */
   line-height: 1.5;    /* ← SEPARACIÓN DE LETRAS DE LA BURBUJA */
   font-weight: 700;    /* LETRAS MAS GRUESAS DE LA BURBUJA */
 }
