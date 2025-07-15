@@ -960,35 +960,27 @@ strong {
   position: relative;
 }
 
-.tooltip-text {
-  visibility: hidden;
-  opacity: 0;
-  width: 300px;
-  background-color: rgba(0, 0, 0, 0.85);
-  color: #fff;
-  text-align: left;
-  padding: 15px;
-  border-radius: 10px;
-  position: absolute;
-  bottom: 110%;
-  left: 50%;
-  transform: translateX(-50%);
-  transition: opacity 0.3s ease-in-out;
-  z-index: 10;
+.menu-image-wrap {
+    position: relative;
+    overflow: hidden;
+  }
 
-  /* ESTILO DEL TEXTO */
-  font-size: 25px;     /* ← PARA AGRANDAR LETRAS DE LA BURBUJA */
-  line-height: 1.5;    /* ← SEPARACIÓN DE LETRAS DE LA BURBUJA */
-  font-weight: 700;    /* LETRAS MAS GRUESAS DE LA BURBUJA */
-}
+  .tooltip-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 25px;
+    font-size: 20px;
+    line-height: 1.8;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    pointer-events: none;
+  }
 
-.tooltip-container:hover .tooltip-text {
-  visibility: visible;
-  opacity: 1;
-}
-.menu-thumb {
-  overflow: visible !important;
-}
-
-
+  .menu-image-wrap:hover .tooltip-overlay {
+    opacity: 1;
+  }
 

@@ -14,34 +14,7 @@
     <link href="css/bootstrap-icons.css" rel="stylesheet" />
     <link href="css/tooplate-crispy-kitchen.css" rel="stylesheet" />
 
-    <style>
-        .tooltip-container {
-            position: relative;
-        }
 
-        .tooltip-text {
-            visibility: hidden;
-            opacity: 0;
-            width: 240px;
-            background-color: rgba(0, 0, 0, 0.85);
-            color: #fff;
-            text-align: center;
-            padding: 10px;
-            border-radius: 6px;
-            position: absolute;
-            bottom: 110%;
-            left: 50%;
-            transform: translateX(-50%);
-            transition: opacity 0.3s ease-in-out;
-            z-index: 10;
-            font-size: 14px;
-        }
-
-        .tooltip-container:hover .tooltip-text {
-            visibility: visible;
-            opacity: 1;
-        }
-    </style>
 </head>
 
 <body>
@@ -58,7 +31,7 @@
             </button>
 
             <div class="collapse navbar-collapse" id="navbarNav">
-                <!-- ms-auto para alinear a la derecha -->
+
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
                         <a class="nav-link" href="index.html">Inicio</a>
@@ -113,102 +86,127 @@
                     </div>
 
                     <div class="col-lg-4 col-md-6 col-12">
-
-                        <div class="menu-thumb tooltip-container">
+                        <div class="menu-thumb">
                             <div class="menu-image-wrap">
                                 <img src="images/nuestros_servicios/Asesoría_Personalizada.png"
                                     class="img-fluid menu-image" alt="">
+
+                                <div class="tooltip-overlay">
+                                    <ul>
+                                        <li>Consulta en el índice nacional de sucesión intestada (de testamento)</li>
+                                        <li>Asesoramiento en trámites legales</li>
+                                        <li>Orientación para procesos notariales</li>
+                                        <li>Evaluación previa de requisitos legales</li>
+                                    </ul>
+                                </div>
                             </div>
                             <div class="menu-info d-flex justify-content-center align-items-center text-center">
                                 <h4 class="mb-0">Asesoría Personalizada</h4>
                             </div>
-                            <div class="tooltip-text">
-                                Te orientamos legalmente en la compra, venta o alquiler de propiedades. Atención
-                                personalizada.
-                            </div>
+
                         </div>
                     </div>
 
                     <div class="col-lg-4 col-md-6 col-12">
-
-                        <div class="menu-thumb tooltip-container">
+                        <div class="menu-thumb">
                             <div class="menu-image-wrap">
                                 <img src="images/nuestros_servicios/Trámites_y_Documentación.png"
                                     class="img-fluid menu-image" alt="">
+                                <div class="tooltip-overlay">
+                                    <ul>
+                                        <li>Duplicado de DNI electrónico</li>
+                                        <li>Duplicado de DNI a partir de 17 años</li>
+                                        <li>Copias certificadas de actas vía internet</li>
+                                        <li>Solicitud de certificado literal de partida (copia literal)</li>
+                                        <li>Visualización e impresión de partida</li>
+                                    </ul>
+                                </div>
                             </div>
                             <div class="menu-info d-flex justify-content-center align-items-center text-center">
                                 <h4 class="mb-0">Trámites y documentación</h4>
                             </div>
-                            <div class="tooltip-text">
-                                Te orientamos legalmente en la compra, venta o alquiler de propiedades. Atención
-                                personalizada.
-                            </div>
+
                         </div>
                     </div>
 
                     <div class="col-lg-4 col-md-6 col-12">
 
-                        <div class="menu-thumb tooltip-container">
+                        <div class="menu-thumb">
                             <div class="menu-image-wrap">
                                 <img src="images/nuestros_servicios/Negociación.png" class="img-fluid menu-image"
                                     alt="">
+                                <div class="tooltip-overlay">
+                                    <ul>
+                                        <li>Copia informativa de título archivado</li>
+                                        <li>Solicitud de publicidad certificada (vigencias, etc.)</li>
+                                        <li>Solicitud de boleta informativa de vehículo</li>
+                                    </ul>
+                                </div>
                             </div>
                             <div class="menu-info d-flex justify-content-center align-items-center text-center">
                                 <h4 class="mb-0">Trámites registrales</h4>
                             </div>
-                            <div class="tooltip-text">
-                                Te orientamos legalmente en la compra, venta o alquiler de propiedades. Atención
-                                personalizada.
-                            </div>
+
                         </div>
                     </div>
 
                     <div class="col-lg-4 col-md-6 col-12">
 
-                        <div class="menu-thumb tooltip-container">
+                        <div class="menu-thumb">
                             <div class="menu-image-wrap">
                                 <img src="images/nuestros_servicios/Promoción_de_Propiedades .png"
                                     class="img-fluid menu-image" alt="">
+                                <div class="tooltip-overlay">
+                                    <ul>
+                                        <li>Inscripción o consulta de vehículos</li>
+                                        <li>Solicitud de boleta informativa de vehículo</li>
+                                        <li>Transferencias vehiculares (si aplicara)</li>
+                                    </ul>
+                                </div>
                             </div>
                             <div class="menu-info d-flex justify-content-center align-items-center text-center">
                                 <h4 class="mb-0">Vehículos</h4>
                             </div>
-                            <div class="tooltip-text">
-                                Te orientamos legalmente en la compra, venta o alquiler de propiedades. Atención
-                                personalizada.
-                            </div>
+
                         </div>
                     </div>
 
                     <div class="col-lg-4 col-md-6 col-12">
-                        <div class="menu-thumb tooltip-container">
+                        <div class="menu-thumb">
                             <div class="menu-image-wrap">
                                 <img src="images/nuestros_servicios/Tasaciones_y_Valuaciones.png"
                                     class="img-fluid menu-image" alt="">
+                                <div class="tooltip-overlay">
+                                    <ul>
+                                        <li>Pago de tasas judiciales</li>
+                                        <li>Certificado de antecedentes penales</li>
+                                    </ul>
+                                </div>
                             </div>
                             <div class="menu-info d-flex justify-content-center align-items-center text-center">
                                 <h4 class="mb-0">Judiciales</h4>
                             </div>
-                            <div class="tooltip-text">
-                                Te orientamos legalmente en la compra, venta o alquiler de propiedades. Atención
-                                personalizada.
-                            </div>
+
                         </div>
                     </div>
 
                     <div class="col-lg-4 col-md-6 col-12">
-                        <div class="menu-thumb tooltip-container">
+                        <div class="menu-thumb">
                             <div class="menu-image-wrap">
                                 <img src="images/nuestros_servicios/Asesoría_Legal_Inmobiliaria.png"
                                     class="img-fluid menu-image" alt="">
+                                <div class="tooltip-overlay">
+                                    <ul>
+                                        <li>Recibo por honorarios</li>
+                                        <li>Emisión de comprobantes electrónicos</li>
+                                        <li>Servicios no clasificables en las otras categorías</li>
+                                    </ul>
+                                </div>
                             </div>
                             <div class="menu-info d-flex justify-content-center align-items-center text-center">
                                 <h4 class="mb-0">Otros</h4>
                             </div>
-                            <div class="tooltip-text">
-                                Te orientamos legalmente en la compra, venta o alquiler de propiedades. Atención
-                                personalizada.
-                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -277,32 +275,32 @@
 
                 </div>
 
-            </div><!-- row ending -->
+            </div>
 
-        </div><!-- container ending -->
+        </div>
 
     </footer>
 
-    <!-- JAVASCRIPT FILES -->
+
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/custom.js"></script>
 
     <script>
-        // Obtener la ruta actual (ej: "index.html")
+
         const currentPage = window.location.pathname.split('/').pop();
 
-        // Seleccionar todos los enlaces del menú
+        
         const navLinks = document.querySelectorAll('.nav-link');
 
-        // Recorrer cada enlace y comparar con la página actual
+
         navLinks.forEach(link => {
             const linkPage = link.getAttribute('href').split('/').pop();
 
-            // Remover 'active' de todos los enlaces primero
+
             link.classList.remove('active');
 
-            // Agregar 'active' solo al enlace que coincide con la página actual
+
             if (linkPage === currentPage) {
                 link.classList.add('active');
             }
@@ -311,7 +309,7 @@
 
     <a href="https://wa.me/51983881481?text=Hola,%20estoy%20interesado%20en%20sus%20servicios" class="whatsapp-float"
         target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">
-        <i class="bi bi-whatsapp"></i> <!-- Icono de Bootstrap Icons -->
+        <i class="bi bi-whatsapp"></i> 
     </a>
 </body>
 </html>
