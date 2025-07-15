@@ -768,6 +768,8 @@ strong {
 
 .tel-link {
   color: var(--p-color);
+  font-size: 30px; /* Puedes ajustar el tamaño: 18px, 24px, etc. */
+  font-weight: bold; /* Opcional: para hacerlo más grueso */
 }
 
 .site-footer a:hover {
