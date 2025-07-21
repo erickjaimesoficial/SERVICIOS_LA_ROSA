@@ -974,8 +974,8 @@ strong {
     right: 0;
     background: rgba(0, 0, 0, 0.8);
     color: #fff;
-    padding: 25px;
-    font-size: 20px;
+    padding: 20px;
+    font-size: 17px;
     line-height: 1.8;
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
@@ -985,4 +985,8 @@ strong {
   .menu-image-wrap:hover .tooltip-overlay {
     opacity: 1;
   }
+
+html {
+  font-size: 75%; /* Esto reduce todos los tamaños proporcionales (em/rem) en toda la web */
+}
 

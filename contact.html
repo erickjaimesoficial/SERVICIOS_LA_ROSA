@@ -1,213 +1,220 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="">
-        <meta name="author" content="">
-        <title>Servicios La Rosa - Contacto</title>
 
-        <!-- CSS FILES -->        
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">                
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link href="css/bootstrap-icons.css" rel="stylesheet">
-        <link href="css/tooplate-crispy-kitchen.css" rel="stylesheet">
-    </head>
-    
-    <body>
-        <nav class="navbar navbar-expand-lg bg-white shadow-lg">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Servicios La Rosa - Contacto</title>
+
+    <!-- CSS FILES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-icons.css" rel="stylesheet">
+    <link href="css/tooplate-crispy-kitchen.css" rel="stylesheet">
+    <link rel="icon" href="images/logoicon.png" type="image/x-icon">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-white shadow-lg">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                Servicios La Rosa
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="menu.html">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contact.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <header class="site-header site-contact-header">
             <div class="container">
-                <a class="navbar-brand" href="index.html">
-                    Servicios La Rosa
-                </a>
-        
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="menu.html">Menu</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="contact.html">Contacto</a>
-                        </li>
-                    </ul>
+                <div class="row">
+                    <div class="col-lg-10 col-12 mx-auto">
+                        <h1 class="text-white">Puedes dejar tu mensaje</h1>
+                    </div>
                 </div>
             </div>
-        </nav>
+            <div class="overlay"></div>
+        </header>
 
-        <main>
-            <header class="site-header site-contact-header">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-10 col-12 mx-auto">
-                            <h1 class="text-white">Puedes dejar tu mensaje</h1>
-                        </div>
-                    </div>
-                </div>
-                <div class="overlay"></div>
-            </header>
-
-            <section class="contact section-padding">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12">
-                            <h2 class="mb-4">Deje su mensaje</h2>
-                        </div>
-
-                        <!-- FORMULARIO ADAPTADO PARA FORMSPREE -->
-                        <div class="col-lg-6 col-12">
-                            <form class="custom-form contact-form row" 
-                                  action="https://formspree.io/f/coldnessmask@gmail.com" 
-                                  method="POST" 
-                                  id="contactForm">
-                                
-                                <!-- Campos del formulario (conservando tus names originales) -->
-                                <div class="col-lg-6 col-6">
-                                    <label for="contact-name" class="form-label">Nombre Completo</label>
-                                    <input type="text" name="contact-name" id="contact-name" class="form-control" placeholder="Tu Nombre completo" required>
-                                </div>
-                            
-                                <div class="col-lg-6 col-6">
-                                    <label for="contact-phone" class="form-label">Número Celular</label>
-                                    <input type="tel" name="contact-phone" id="contact-phone" class="form-control" 
-                                           pattern="[0-9]{9}" title="Ej: 983881481" placeholder="983881481" required>
-                                </div>
-                            
-                                <div class="col-12">
-                                    <label for="contact-email" class="form-label">Email</label>
-                                    <input type="email" name="contact-email" id="contact-email" class="form-control" 
-                                           pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="tu@email.com" required>
-                                </div>
-                            
-                                <div class="col-12">
-                                    <label for="contact-message" class="form-label">Mensaje</label>
-                                    <textarea class="form-control" rows="5" name="contact-message" id="contact-message" required></textarea>
-                                </div>
-                            
-                                <!-- Configuración especial para Formspree -->
-                                
-                                <input type="hidden" name="_subject" value="Nuevo mensaje de contacto - Servicios La Rosa">
-                                <input type="hidden" name="_language" value="es">
-                                <input type="text" name="_honeypot" class="hidden-input" aria-hidden="true" tabindex="-1">
-                            
-                                <div class="col-lg-5 col-12 ms-auto">
-                                    <button type="submit" class="form-control">Enviar</button>
-                                </div>
-                            </form>
-                        </div>
-
-                        <!-- El resto de tu contenido se mantiene igual -->
-                        <div class="col-lg-4 col-12 mx-auto mt-lg-5 mt-4">
-                            <h5>Días Laborales</h5>
-                            <div class="d-flex mb-lg-3">
-                                <p>Lunes a Viernes</p>
-                                <p class="ms-5">10:00 AM - 08:00 PM</p>
-                            </div>
-                            <h5>Fines de Semana</h5>
-                            <div class="d-flex">
-                                <p>Sábados y Domingos</p>
-                                <p class="ms-5">11:00 AM - 11:00 PM</p>
-                            </div>
-                        </div>
-
-                        <div class="col-12">
-              <h4 class="mt-5 mb-4">ABCD, EFGH, IJ 1234, Perú</h4>
-              <div class="google-map pt-3">
-                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15609.838389627332!2d-77.06941420121623!3d-12.011848061553815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105cee31ed53f5b%3A0x9b233fc0b1c13e2c!2sCentro%20Comercial%20Fiori!5e0!3m2!1ses-419!2spe!4v1743539859854!5m2!1ses-419!2spe"
-                  class="mapa-iframe"
-                  loading="lazy"
-                  allow="fullscreen"
-                  title="Mapa de ubicación del Centro Comercial Fiori en Lima, Perú">
-                 </iframe>
-              </div>
-              </div>
-                    </div>
-                </div>
-            </section>
-        </main>
-
-        <footer class="site-footer section-padding">
+        <section class="contact section-padding">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
-                        <h4 class="text-white mb-4 me-5">Información</h4>
+                        <h2 class="mb-4">Deje su mensaje</h2>
                     </div>
-                    <div class="col-lg-4 col-md-7 col-xs-12 tooplate-mt30">
-                        <h6 class="text-white mb-lg-4 mb-3">Locación</h6>
-                        <p>ABCD, EFGH, IJ 1234, Perú</p>
-                        <a href="https://maps.app.goo.gl/U5PZEkbktpxYwoj78" class="custom-btn btn btn-dark mt-2">Dirección</a>
+
+                    <!-- FORMULARIO ADAPTADO PARA FORMSPREE -->
+                    <div class="col-lg-6 col-12">
+  <form name="contacto" method="POST" action="gracias.html" data-netlify="true" data-netlify-honeypot="bot-field"
+    class="custom-form contact-form row" id="contactForm" enctype="multipart/form-data">
+
+    <!-- Campo oculto para Netlify -->
+    <input type="hidden" name="form-name" value="contacto">
+    <p hidden>
+        <label>No llenar esto: <input name="bot-field"></label>
+    </p>
+
+    <!-- Campos reales -->
+    <div class="col-lg-6 col-6">
+        <label for="contact-name" class="form-label">Nombre Completo</label>
+        <input type="text" name="contact-name" id="contact-name" class="form-control"
+            placeholder="Tu Nombre completo" required>
+    </div>
+
+    <div class="col-lg-6 col-6">
+        <label for="contact-phone" class="form-label">Número Celular</label>
+        <input type="tel" name="contact-phone" id="contact-phone" class="form-control"
+            pattern="[0-9]{9}" title="Ej: 983881481" placeholder="983881481" required>
+    </div>
+
+    <div class="col-12">
+        <label for="contact-email" class="form-label">Email</label>
+        <input type="email" name="contact-email" id="contact-email" class="form-control"
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="tu@email.com" required>
+    </div>
+
+    <div class="col-12">
+        <label for="contact-message" class="form-label">Mensaje</label>
+        <textarea class="form-control" rows="5" name="contact-message" id="contact-message"
+            required></textarea>
+    </div>
+
+    <div class="col-12">
+        <label for="archivo" class="form-label">Adjuntar archivo (opcional)</label>
+        <input type="file" name="archivo" id="archivo" class="form-control">
+    </div>
+
+    <div class="col-lg-5 col-12 ms-auto">
+        <button type="submit" class="form-control">Enviar</button>
+    </div>
+</form>
+</div>
+
+                    <!-- El resto de tu contenido se mantiene igual -->
+                    <div class="col-lg-4 col-12 mx-auto mt-lg-5 mt-4">
+                        <h5>Días Laborales</h5>
+                        <div class="d-flex mb-lg-3">
+                            <p>Lunes a Viernes</p>
+                            <p class="ms-5">10:00 AM - 08:00 PM</p>
+                        </div>
+                        <h5>Fines de Semana</h5>
+                        <div class="d-flex">
+                            <p>Sábados y Domingos</p>
+                            <p class="ms-5">11:00 AM - 11:00 PM</p>
+                        </div>
                     </div>
-                    <div class="col-lg-4 col-md-5 col-xs-12 tooplate-mt30">
-                        <h6 class="text-white mb-lg-4 mb-3">Horario</h6>
-                        <p class="mb-2">Lunes - Viernes</p>
-                        <p>10:00 AM - 08:00 PM</p>
-                        <p>Tel: <a href="tel: 010-02-0340" class="tel-link">+51 983 881 481</a></p>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-xs-12 tooplate-mt30">
-                        <h6 class="text-white mb-lg-4 mb-3">Redes Sociales</h6>
-                        <ul class="social-icon">
-                            <li>
-                                <a href="#" class="social-icon-link" aria-label="Facebook">
-                                  <i class="bi bi-facebook"></i>
-                                  <span class="visually-hidden">Facebook</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="social-icon-link" aria-label="Instagram">
-                                    <i class="bi bi-instagram"></i>
-                                    <span class="visually-hidden">instagram</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="social-icon-link" aria-label="Youtube">
-                                    <i class="bi bi-youtube"></i>
-                                    <span class="visually-hidden">Youtube</span>
-                                </a>
-                            </li>
-                        </ul>
-                        <p class="copyright-text tooplate-mt60">
-                            Copyright © 2025 JE Co., Ltd.<br>
-                            Diseño: 
-                            <a rel="noopener noreferrer nofollow" href="https://www.google.com.pe/" target="_blank">JE Corp</a></p>
+
+                    <div class="col-12">
+                        <h4 class="mt-5 mb-4">ABCD, EFGH, IJ 1234, Perú</h4>
+                        <div class="google-map pt-3">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15609.838389627332!2d-77.06941420121623!3d-12.011848061553815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105cee31ed53f5b%3A0x9b233fc0b1c13e2c!2sCentro%20Comercial%20Fiori!5e0!3m2!1ses-419!2spe!4v1743539859854!5m2!1ses-419!2spe"
+                                class="mapa-iframe" loading="lazy" allow="fullscreen"
+                                title="Mapa de ubicación del Centro Comercial Fiori en Lima, Perú">
+                            </iframe>
+                        </div>
                     </div>
                 </div>
-             </div>
-        </footer>
+            </div>
+        </section>
+    </main>
 
-        <!-- JAVASCRIPT FILES -->
-        <script src="js/jquery.min.js"></script>
-        <script src="js/bootstrap.bundle.min.js"></script>
-        <script src="js/custom.js"></script>
+    <footer class="site-footer section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h4 class="text-white mb-4 me-5">Información</h4>
+                </div>
+                <div class="col-lg-4 col-md-7 col-xs-12 tooplate-mt30">
+                    <h6 class="text-white mb-lg-4 mb-3">Locación</h6>
+                    <p>ABCD, EFGH, IJ 1234, Perú</p>
+                    <a href="https://maps.app.goo.gl/U5PZEkbktpxYwoj78"
+                        class="custom-btn btn btn-dark mt-2">Dirección</a>
+                </div>
+                <div class="col-lg-4 col-md-5 col-xs-12 tooplate-mt30">
+                    <h6 class="text-white mb-lg-4 mb-3">Horario</h6>
+                    <p class="mb-2">Lunes - Viernes</p>
+                    <p>10:00 AM - 08:00 PM</p>
+                    <p>Tel: <a href="tel: 010-02-0340" class="tel-link">+51 983 881 481</a></p>
+                </div>
+                <div class="col-lg-4 col-md-6 col-xs-12 tooplate-mt30">
+                    <h6 class="text-white mb-lg-4 mb-3">Redes Sociales</h6>
+                    <ul class="social-icon">
+                        <li>
+                            <a href="#" class="social-icon-link" aria-label="Facebook">
+                                <i class="bi bi-facebook"></i>
+                                <span class="visually-hidden">Facebook</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="social-icon-link" aria-label="Instagram">
+                                <i class="bi bi-instagram"></i>
+                                <span class="visually-hidden">instagram</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="social-icon-link" aria-label="Youtube">
+                                <i class="bi bi-youtube"></i>
+                                <span class="visually-hidden">Youtube</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <p class="copyright-text tooplate-mt60">
+                        Copyright © 2025 JE Co., Ltd.<br>
+                        Diseño:
+                        <a rel="noopener noreferrer nofollow" href="https://www.google.com.pe/" target="_blank">JE
+                            Corp</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
 
-        <script>
-            // Script para resaltar el enlace activo (se mantiene igual)
-            const currentPage = window.location.pathname.split('/').pop();
-            const navLinks = document.querySelectorAll('.nav-link');
-            
-            navLinks.forEach(link => {
-                const linkPage = link.getAttribute('href').split('/').pop();
-                link.classList.remove('active');
-                if (linkPage === currentPage) {
-                    link.classList.add('active');
-                }
-            });
-        </script>
-        
-        <a href="https://wa.me/51983881481?text=Hola,%20estoy%20interesado%20en%20sus%20servicios" 
-   class="whatsapp-float" 
-   target="_blank" 
-   rel="noopener noreferrer"
-   aria-label="Contactar por WhatsApp">
-   <i class="bi bi-whatsapp"></i> <!-- Icono de Bootstrap Icons -->
-</a>
-    </body>
+    <!-- JAVASCRIPT FILES -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/custom.js"></script>
+
+    <script>
+        // Script para resaltar el enlace activo (se mantiene igual)
+        const currentPage = window.location.pathname.split('/').pop();
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        navLinks.forEach(link => {
+            const linkPage = link.getAttribute('href').split('/').pop();
+            link.classList.remove('active');
+            if (linkPage === currentPage) {
+                link.classList.add('active');
+            }
+        });
+    </script>
+
+    <a href="https://wa.me/51983881481?text=Hola,%20estoy%20interesado%20en%20sus%20servicios" class="whatsapp-float"
+        target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">
+        <i class="bi bi-whatsapp"></i> <!-- Icono de Bootstrap Icons -->
+    </a>
+</body>
+
 </html>
