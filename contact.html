@@ -14,7 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/bootstrap-icons.css" rel="stylesheet">
-    <link href="css/tooplate-crispy-kitchen.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
     <link rel="icon" href="images/logoicon.png" type="image/x-icon">
 </head>
 
@@ -47,7 +47,8 @@
     </nav>
 
     <main>
-        <header class="site-header site-contact-header">
+
+        <header class="hero">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-10 col-12 mx-auto">
@@ -55,6 +56,11 @@
                     </div>
                 </div>
             </div>
+
+            <div class="video-wrap"
+                style="background-image: url('images/header/images_def.jpg'); background-size: cover; background-position: center; z-index: -1;">
+            </div>
+
             <div class="overlay"></div>
         </header>
 
@@ -67,50 +73,52 @@
 
                     <!-- FORMULARIO ADAPTADO PARA FORMSPREE -->
                     <div class="col-lg-6 col-12">
-  <form name="contacto" method="POST" action="gracias.html" data-netlify="true" data-netlify-honeypot="bot-field"
-    class="custom-form contact-form row" id="contactForm" enctype="multipart/form-data">
+                        <form name="contacto" method="POST" action="gracias.html" data-netlify="true"
+                            data-netlify-honeypot="bot-field" class="custom-form contact-form row" id="contactForm"
+                            enctype="multipart/form-data">
 
-    <!-- Campo oculto para Netlify -->
-    <input type="hidden" name="form-name" value="contacto">
-    <p hidden>
-        <label>No llenar esto: <input name="bot-field"></label>
-    </p>
+                            <!-- Campo oculto para Netlify -->
+                            <input type="hidden" name="form-name" value="contacto">
+                            <p hidden>
+                                <label>No llenar esto: <input name="bot-field"></label>
+                            </p>
 
-    <!-- Campos reales -->
-    <div class="col-lg-6 col-6">
-        <label for="contact-name" class="form-label">Nombre Completo</label>
-        <input type="text" name="contact-name" id="contact-name" class="form-control"
-            placeholder="Tu Nombre completo" required>
-    </div>
+                            <!-- Campos reales -->
+                            <div class="col-lg-6 col-6">
+                                <label for="contact-name" class="form-label">Nombre Completo</label>
+                                <input type="text" name="contact-name" id="contact-name" class="form-control"
+                                    placeholder="Tu Nombre completo" required>
+                            </div>
 
-    <div class="col-lg-6 col-6">
-        <label for="contact-phone" class="form-label">Número Celular</label>
-        <input type="tel" name="contact-phone" id="contact-phone" class="form-control"
-            pattern="[0-9]{9}" title="Ej: 983881481" placeholder="983881481" required>
-    </div>
+                            <div class="col-lg-6 col-6">
+                                <label for="contact-phone" class="form-label">Número Celular</label>
+                                <input type="tel" name="contact-phone" id="contact-phone" class="form-control"
+                                    pattern="[0-9]{9}" title="Ej: 983881481" placeholder="983881481" required>
+                            </div>
 
-    <div class="col-12">
-        <label for="contact-email" class="form-label">Email</label>
-        <input type="email" name="contact-email" id="contact-email" class="form-control"
-            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="tu@email.com" required>
-    </div>
+                            <div class="col-12">
+                                <label for="contact-email" class="form-label">Email</label>
+                                <input type="email" name="contact-email" id="contact-email" class="form-control"
+                                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="tu@email.com"
+                                    required>
+                            </div>
 
-    <div class="col-12">
-        <label for="contact-message" class="form-label">Mensaje</label>
-        <textarea class="form-control" rows="5" name="contact-message" id="contact-message"
-            required></textarea>
-    </div>
+                            <div class="col-12">
+                                <label for="contact-message" class="form-label">Mensaje</label>
+                                <textarea class="form-control" rows="5" name="contact-message" id="contact-message"
+                                    required></textarea>
+                            </div>
 
-    <div class="col-12">
-        <label for="archivo" class="form-label">Adjuntar archivo (opcional)</label>
-        <input type="file" name="archivo" id="archivo" class="form-control">
-    </div>
+                            <div class="col-12">
+                                <label for="archivo" class="form-label">Adjuntar archivo (opcional)</label>
+                                <input type="file" name="archivo" id="archivo" class="form-control">
+                            </div>
 
-    <div class="col-lg-5 col-12 ms-auto">
-        <button type="submit" class="form-control">Enviar</button>
-    </div>
-</form>
-</div>
+                            <div class="col-lg-5 col-12 ms-auto">
+                                <button type="submit" class="form-control">Enviar</button>
+                            </div>
+                        </form>
+                    </div>
 
                     <!-- El resto de tu contenido se mantiene igual -->
                     <div class="col-lg-4 col-12 mx-auto mt-lg-5 mt-4">
