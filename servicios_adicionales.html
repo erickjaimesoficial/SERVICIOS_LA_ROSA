@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de ubicación</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <style>
+        body {
+            background-color: #052b50;
+            color: #000;
+        }
+        .container {
+            background: #fffdfd;
+            padding: 2rem;
+            border-radius: 15px;
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+        /* Estilo para los títulos de las imágenes */
+        .image-title {
+            margin-bottom: 15px;
+            font-weight: bold;
+            color: #052b50;
+            text-transform: uppercase;
+            font-size: 1rem;
+        }
+        .menu-thumb {
+            cursor: pointer; /* Cambia el cursor a mano */
+            margin-bottom: 20px;
+        }
+        .menu-thumb img {
+            border-radius: 10px;
+            height: 300px;
+            object-fit: cover;
+            width: 100%;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .menu-thumb img:hover {
+            transform: scale(1.05) rotate(3deg);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        .description {
+            margin-bottom: 30px;
+            font-size: 1.2rem;
+            color: #333;
+        }
+        /* Ajuste para el modal */
+        /* Fondo oscuro para que resalte la imagen */
+.modal-backdrop.show {
+    opacity: 0.9;
+}
+
+.modal-content {
+    background-color: transparent;
+    border: none;
+}
+
+/* Título del modal más claro y separado */
+.modal-header {
+    border-bottom: none;
+    padding: 0 0 10px 0;
+}
+
+#modalTitle {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+/* La imagen debe mostrarse completa */
+#modalImage {
+    max-height: 80vh; /* Que no se pase del alto de la pantalla */
+    width: auto;      /* Que mantenga su proporción real */
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.5);
+}
+    </style>
+</head>
+<body>
+
+<div class="container animate__animated animate__fadeIn">
+    <h1 class="text-center mb-4">Servicios de estructuras metálicas, ascensores y construcciones PIT</h1>
+    
+    <!--<div class="description text-center">
+        <p>Bienvenidos a nuestra galería de ubicación. Aquí podrás encontrar imágenes diferentes del lote disponible. Cada imagen te mostrará un detalle específico del lote, ayudándote a tomar una decisión informada.</p>
+    </div> -->
+
+    <div class="row g-4 justify-content-center"> 
+        
+        <div class="col-lg-4 col-md-6 col-12">
+            <div class="menu-thumb text-center" onclick="ampliarImagen(this)">
+                <h5 class="image-title">Ascensores construidos para la empresa Toshiba</h5> 
+                <img src="images/nuestros_servicios/1.jpg" class="img-fluid menu-image animate__animated animate__fadeInDown" alt="Vista Frontal">
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-12">
+            <div class="menu-thumb text-center" onclick="ampliarImagen(this)">
+                <h5 class="image-title">Construcción de PIT para ascensores en Pacasmayo</h5>
+                <img src="images/nuestros_servicios/2.jpg" class="img-fluid menu-image animate__animated animate__fadeInDown" alt="Excavación de Base">
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-12">
+            <div class="menu-thumb text-center" onclick="ampliarImagen(this)">
+                <h5 class="image-title">Construcción Castillo para  ascensor domiciliario | RAS Arquitectos </h5>
+                <img src="images/nuestros_servicios/3.jpg" class="img-fluid menu-image animate__animated animate__fadeInDown" alt="Estructura Interna">
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-12">
+            <div class="menu-thumb text-center" onclick="ampliarImagen(this)">
+                <h5 class="image-title">Acabado final para RAS Arquitectos</h5>
+                <img src="images/nuestros_servicios/4.jpg" class="img-fluid menu-image animate__animated animate__fadeInDown" alt="Acabados Finales">
+            </div>
+        </div>
+
+    </div>
+
+    
+</div>
+
+<div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title text-white w-100 text-center" id="modalTitle"></h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body p-0 text-center">
+                <img src="" id="modalImage" alt="Imagen ampliada">
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+    function ampliarImagen(elemento) {
+        // Obtenemos la ruta de la imagen y el título
+        const src = elemento.querySelector('img').src;
+        const titulo = elemento.querySelector('.image-title').innerText;
+
+        // Los ponemos en el modal
+        document.getElementById('modalImage').src = src;
+        document.getElementById('modalTitle').innerText = titulo;
+
+        // Mostramos el modal
+        const myModal = new bootstrap.Modal(document.getElementById('imageModal'));
+        myModal.show();
+    }
+</script>
+
+</body>
+</html>
